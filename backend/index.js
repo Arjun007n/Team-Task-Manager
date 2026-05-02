@@ -1,6 +1,14 @@
 import express from "express";
 import cors from "cors";
+import path from "path";
+import fs from "fs";
+import { fileURLToPath } from "url";
 import { initDb } from "./db.js";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const distDir = path.join(__dirname, "..", "dist");
+const indexHtmlPath = path.join(distDir, "index.html");
 
 const app = express();
 const START_PORT = Number(process.env.PORT) || 3001;
@@ -254,6 +262,26 @@ app.delete("/api/tasks/:id", async (req, res, next) => {
     next(error);
   }
 });
+
+app.use("/api", (_req, res) => {
+  res.status(404).json({ message: "Not found" });
+});
+
+if (fs.existsSync(indexHtmlPath)) {
+  app.use(express.static(distDir));
+  app.use((req, res, next) => {
+    if (req.method !== "GET" && req.method !== "HEAD") {
+      return next();
+    }
+    res.sendFile(indexHtmlPath, (err) => {
+      if (err) next(err);
+    });
+  });
+} else {
+  console.warn(
+    "No production build found at dist/. Run `npm run build` to serve the React app from this server."
+  );
+}
 
 app.use((error, _req, res, _next) => {
   console.error("API error:", error);

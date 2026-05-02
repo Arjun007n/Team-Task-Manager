@@ -3,10 +3,14 @@
   "private": true,
   "version": "0.0.1",
   "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "build": "vite build",
     "dev": "vite",
-    "backend": "node backend/index.js"
+    "backend": "node backend/index.js",
+    "start": "node backend/index.js"
   },
   "dependencies": {
     "@emotion/react": "11.14.0",
