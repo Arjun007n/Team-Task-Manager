@@ -22,19 +22,31 @@ Express.js
 SQLite3
 📂 Project Structure
 project-root/
+
 │
 ├── backend/          # Backend server (Express + SQLite)
+
 │   └── index.js
+
 │
+
 ├── src/              # Frontend source code
+
 │   ├── components/
+
 │   ├── pages/
+
 │   └── App.jsx
+
 │
 ├── dist/             # Production build
+
 ├── index.html        # Entry HTML file
+
 ├── package.json
+
 └── vite.config.ts
+
 ⚙️ Installation & Setup
 1️⃣ Clone the repository
 git clone https://github.com/your-username/your-repo-name.git
