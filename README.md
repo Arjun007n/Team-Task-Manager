@@ -49,8 +49,8 @@ project-root/
 
 ⚙️ Installation & Setup
 1️⃣ Clone the repository
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/Arjun007n/Team-Task-Manager.git
+cd Team-Task-Manager
 2️⃣ Install dependencies
 npm install
 3️⃣ Run frontend (development)
