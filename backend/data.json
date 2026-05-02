@@ -1,0 +1,27 @@
+{
+  "users": [],
+  "projects": [
+    {
+      "id": "1777669190643",
+      "name": "e-commarce site for photoframe company",
+      "description": "selling photoframes online",
+      "status": "active",
+      "createdBy": "1777661536484",
+      "createdAt": "2026-05-01"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "1777669278885",
+      "title": "making UI for site",
+      "description": "selling photoframes online",
+      "projectId": "1777669190643",
+      "priority": "high",
+      "dueDate": "2026-05-14",
+      "status": "pending",
+      "assignedTo": null,
+      "createdBy": "1777661536484",
+      "createdAt": "2026-05-01"
+    }
+  ]
+}
