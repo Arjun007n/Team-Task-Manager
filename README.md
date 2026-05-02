@@ -3,23 +3,39 @@
 A full-stack web application built using React (Vite) for the frontend and Node.js + Express + SQLite for the backend.
 
 🚀 Features
+
 ⚡ Fast frontend powered by Vite
+
 🎨 Modern UI using Tailwind CSS & Radix UI components
+
 🔄 REST API with Express
+
 💾 SQLite database integration
+
 📱 Responsive design
+
 🎯 Component-based architecture
+
 🛠️ Tech Stack
+
 Frontend
+
 React
+
 Vite
+
 Tailwind CSS
+
 Radix UI
-Recharts (for charts & data visualization)
+
 Backend
+
 Node.js
+
 Express.js
+
 SQLite3
+
 📂 Project Structure
 project-root/
 
